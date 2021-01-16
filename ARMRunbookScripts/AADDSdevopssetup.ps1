@@ -137,7 +137,7 @@ if ($context -eq $null)
 $tenant = $context.Tenant.Id
 $azureRmProfile = [Microsoft.Azure.Commands.Common.Authentication.Abstractions.AzureRmProfileProvider]::Instance.Profile
 $profileClient = New-Object Microsoft.Azure.Commands.ResourceManager.Common.RMProfileClient($azureRmProfile)
-$pat = "npimujlo43no35mqhelu4rxtmguoc4psbpdjkt4cmixsjxcgaiwq" #$profileClient.AcquireAccessToken($context.Tenant.Id).AccessToken
+$pat = $profileClient.AcquireAccessToken($context.Tenant.Id).AccessToken
 $token = $pat
 $token = [System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes(":$($token)"))
 
