@@ -200,7 +200,7 @@ $body = @"
 {
   "parameters": {
     "gitSource": {
-      "url": "https://Amaze-Azure-ITOps-Automation@dev.azure.com/Amaze-Azure-ITOps-Automation/Azure-ITOPS-Automation/_git/itops-wvd-host-pool-automation"
+      "url": "https://github.com/avinash-katore/wvd-hostpool.git"
     }
   }
 }
